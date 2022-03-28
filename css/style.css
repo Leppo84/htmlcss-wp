@@ -44,9 +44,11 @@ main {
 
 .splash {
     background-color: black;
+    background-size: cover;
     margin: 15px 0 10px 0;
     position: relative;
     border-radius: 15px;
+    height: 70vh;
 }
 
 .splashimg {
@@ -54,6 +56,7 @@ main {
     min-width: 100%;
     height: 70vh;
     opacity: 80%;
+    border-radius: 15px;
 }
 
 
@@ -92,35 +95,52 @@ main {
     clear: both;
 }
 
-.contents .container article img {
-    max-width: 100%;
+/* .contents .container article img {
+    width: 100%;
     object-fit: cover;
-}
+} */
 
 article img {
-    min-height: 150px;
-
+    object-fit: cover;
+    width: 100%;
+    height: 25vh;
+    border-radius: 15px;
+    opacity: 80%;
 }
 
+article figure {
+    background-color: black;
+    height: 25vh;
+    border-radius: 15px;
+}
 
+article h3 {
+    margin: 20px 0;
+}
 
 article {
     float: left;
     background-color: lightskyblue;
-    /* height: 100px; */
-    /* margin: 0 auto; */
 }
 
 .columncenter {
     margin: 0 2%;
-    width: 60%;
+    width: 50%;
 }
 
 .columnleft, .columnright {
-    width: 18%;
+    width: 23%;
 }
 
 footer {
     background-color: purple;
     height: 60px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+footer p span {
+    color: red;
 }
